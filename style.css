@@ -68,12 +68,7 @@ main{
 
 }
 
-.card:first-child{
-        
-    width: 50%;
-    
 
-}
 
 #planning{
     margin: 2rem 0;
@@ -100,7 +95,6 @@ main{
 #benefits{
     margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
-    height: 700px;
     display: flex;
     align-items: center;
 
@@ -112,7 +106,7 @@ main{
     margin: 10px;
     border-radius: 3px;
     width: 180px;
-    height: 90px;
+    height: 250px;
 }
 
 
@@ -135,6 +129,23 @@ main{
     text-align: center;
     padding: 10px 0;
 }
+
+#free{
+    margin: 2rem 0;
+    background-color: rgb(151, 146,	228	);
+    height: 700px;
+
+
+}
+
+
+footer{
+    height: 200px;
+    color: black;
+}
+
+
+
 
 /* Responsive mobile */
 
@@ -180,7 +191,7 @@ main{
     }
 
     #intro .card:first-child > div{
-        width: 50%;
+        width: 100%;
     }
 
     #planning .columns{
