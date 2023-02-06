@@ -16,6 +16,7 @@
 .debug-box2{
     background-color: green;
     padding: 100px;
+    width: 100%;
 }
 
 header{
@@ -64,13 +65,15 @@ main{
 
 .card:first-child{
         
-    width: 70%;
+    width: 50%;
     
 
 }
 
 #planning{
     margin: 2rem 0;
+    background-color: rgb(151, 146,	228	);
+    height: 700px;
 
 
 }
@@ -78,6 +81,21 @@ main{
 
 #planning .column{
     margin: 1rem 0;
+
+
+}
+
+#testimonial{
+    margin: 2rem 0;
+    height: 500px;
+
+
+}
+
+#benefits{
+    margin: 2rem 0;
+    background-color: rgb(151, 146,	228	);
+    height: 700px;
 
 
 }
