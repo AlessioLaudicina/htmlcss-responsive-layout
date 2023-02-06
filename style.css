@@ -96,8 +96,18 @@ main{
     margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
     height: 700px;
+    display: flex;
+    align-items: center;
 
 
+}
+
+#benefits .col{
+    background-color: black;
+    margin: 10px;
+    border-radius: 3px;
+    width: 180px;
+    height: 90px;
 }
 
 /* Responsive mobile */
