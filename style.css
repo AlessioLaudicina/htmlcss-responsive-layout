@@ -40,6 +40,11 @@ main{
 .flex{
     display: flex;
 }
+
+.justify-center{
+    justify-content: center;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -108,6 +113,27 @@ main{
     border-radius: 3px;
     width: 180px;
     height: 90px;
+}
+
+
+#about{
+    
+    height: 500px;
+    margin: 2rem 0;
+
+
+
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.title-about{
+    color: rgb(151, 146,	228	);
+    text-align: center;
+    padding: 10px 0;
 }
 
 /* Responsive mobile */
