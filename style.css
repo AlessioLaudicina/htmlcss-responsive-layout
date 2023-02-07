@@ -125,15 +125,7 @@ main{
 }
 
 
-
-
-
-
-
 /* Inizio main */
-
-
-
 
 
 #intro .card{
@@ -197,6 +189,7 @@ main{
 
 .column-white.rounded {
     background-color: white;
+    margin: 20px 0;
 }
 
 
@@ -205,7 +198,7 @@ main{
 }
 
 .planning-img{
-    width: 100%;
+    width: 70%;
 }
 
 .column-white-img{
@@ -356,6 +349,15 @@ main{
         margin-left: 1rem;
         margin-right: 1rem;
         width: calc((100% / 2) - 2rem);
+    }
+
+    .column-white.rounded {
+        background-color: white;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .planning-img{
+        width: 50%;
     }
 
     
