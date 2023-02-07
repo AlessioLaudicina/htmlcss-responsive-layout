@@ -9,6 +9,14 @@ html{
     font-size: 16px;
 }
 
+.root{
+    --primary-color: #3684fd;
+    --primary-light-color: #b5ddff;
+    --background-color: #fff;
+    
+
+}
+
 /* Utility */
 
 
@@ -25,7 +33,7 @@ html{
 
 header{
     width: 100%;
-    background-color: blue;
+    background-color: #3684fd;
     left: 0;
     top: 0;
     height: 70px;
@@ -63,6 +71,14 @@ header .container{
 
 .btn-white{
     background-color: white;
+}
+
+.btn-blue{
+    background-color: #3684fd;
+}
+
+.btn-big{
+    padding: 5px 40px;
 }
 
 
@@ -103,9 +119,7 @@ main{
     border-radius: 1.5rem;
 }
 
-.root{
-    --primary-color:blue;
-}
+
 
 
 
@@ -116,26 +130,26 @@ main{
 
 
 
-.cards{
-    width: 100%;
-    
-}
+
 
 #intro .card{
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     text-align: center;
+    background-color: #b5ddff;
+
 
 }
 
 
 #intro .card:first-child{
     text-align: left;
+    display: flex;
     
 
 }
 
-.first-card-img{
+.first-card img{
     width: 50%;
     align-self: flex-end;
     display: block;
@@ -146,6 +160,7 @@ main{
 #intro .card i{
         
     font-size: 5rem;
+    color: #3684fd;
     
 
 }
@@ -171,7 +186,6 @@ main{
 #planning{
     margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
-    height: 700px;
     padding: 2rem;
 
 
@@ -208,6 +222,10 @@ main{
     margin-bottom: 1rem;
 }
 
+.main-menu{
+    display: none;
+}
+
 
 
 
@@ -242,17 +260,11 @@ main{
 }
 
 
-footer{
-    height: 200px;
-    color: black;
-}
-
-
 
 
 /* Responsive */
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .container{
         max-width: 740px;
     }
@@ -270,7 +282,7 @@ footer{
         width: calc((100 / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
-        background-color: blue;
+        text-align: center;
         
     
     }
@@ -308,7 +320,7 @@ footer{
   
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container{
         max-width: 960px;
     }
@@ -340,8 +352,12 @@ footer{
 
     }
 
-    .hamburgher{
+    .hamburger{
         display: none;
+    }
+
+    .main-menu{
+        display: block;
     }
   
   
