@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
 /* Utility */
 
 
 .debug-box{
-    height: 80px;
     background-color: red;
+    padding: 1rem;
 }
 
 
 .debug-box2{
     background-color: green;
-    padding: 100px;
-    width: 100%;
+    padding: 1rem;
 }
 
 header{
@@ -24,10 +28,50 @@ header{
     background-color: blue;
     left: 0;
     top: 0;
+    height: 70px;
 }
+
+header .container{
+    height: 100%;
+}
+
+
+.main-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.main-menu li{
+    margin-left: 1rem;
+}
+
+.main-menu li a{
+    text-decoration: none;
+}
+
+.text-white{
+    color: white;
+}
+
+
+
+.btn{
+    border-radius: 50px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.btn-white{
+    background-color: white;
+}
+
 
 main{
     padding-top: 80px;
+}
+
+.hamburgher{
+    font-size: 1.5rem;
 }
 
 
@@ -35,6 +79,7 @@ main{
 .container{
     max-width: 600px;
     margin: auto;
+    padding: 0 1rem;
 }
 
 .flex{
@@ -54,17 +99,70 @@ main{
 }
 
 
+.rounded{
+    border-radius: 1.5rem;
+}
+
+.root{
+    --primary-color:blue;
+}
+
+
+
+
 
 
 /* Inizio main */
+
+
 
 .cards{
     width: 100%;
     
 }
 
-.card{
+#intro .card{
     margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+
+#intro .card:first-child{
+    text-align: left;
+    
+
+}
+
+.first-card-img{
+    width: 50%;
+    align-self: flex-end;
+    display: block;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+#intro .card i{
+        
+    font-size: 5rem;
+    
+
+}
+
+#intro .card h3{
+        
+    margin: 1rem 0;
+    
+
+}
+
+#intro .card p{
+        
+    color: gray;
+    line-height: 2rem;
+    font-weight: bold;
+    
 
 }
 
@@ -74,6 +172,7 @@ main{
     margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
     height: 700px;
+    padding: 2rem;
 
 
 }
@@ -86,33 +185,32 @@ main{
 }
 
 #testimonial{
-    margin: 2rem 0;
-    height: 500px;
-
+    padding-top: 3rem 0;
 
 }
+
+#testimonial .card{
+    margin: 2rem 0;
+
+}
+
+
 
 #benefits{
-    margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
-    display: flex;
-    align-items: center;
-    padding: 60px;
-
-
+    padding: 4rem 0;
 }
 
-.columns-benefits{
-    display: flex;
+
+
+#benefits .card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-#benefits .col{
-    background-color: black;
-    margin: 10px;
-    border-radius: 3px;
-    width: 180px;
-    height: 250px;
-}
+
+
+
 
 
 #about{
@@ -152,9 +250,9 @@ footer{
 
 
 
-/* Responsive mobile */
+/* Responsive */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .container{
         max-width: 740px;
     }
@@ -162,6 +260,7 @@ footer{
     #intro .cards{
         display: flex;
         flex-wrap: wrap;
+        
         margin-left: - 0.75rem;
         margin-right: - 0.75rem;
     }
@@ -171,15 +270,38 @@ footer{
         width: calc((100 / 3) - 1.5rem);
         margin-left: 0.75rem;
         margin-right: 0.75rem;
+        background-color: blue;
         
     
     }
 
-    .card:first-child{
+   
+    #intro .card:first-child{
         
-        width: calc((100 / 3 * 2) - 1.5rem);
-        
+        width: calc((100 / 3 * 2) - 1.5rem);  
     
+    }
+
+    #testimonial .card{
+        display: flex;
+    }
+
+
+    #testimonial .card .card-text{
+        flex-grow: 1;
+    }
+
+    #benefits .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    #benefits .card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: calc((100% / 2) - 2rem);
     }
 
     
@@ -196,7 +318,7 @@ footer{
     }
 
     #intro .card:first-child > div{
-        width: 100%;
+        width: 50%;
     }
 
     #planning .columns{
@@ -210,6 +332,17 @@ footer{
         width: calc(50% - 2rem);
         margin: 1rem;
     }
+
+    #benefits .card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: calc((100% / 3) - 2rem);
+
+    }
+
+    .hamburgher{
+        display: none;
+    }
   
   
 }
@@ -218,6 +351,10 @@ footer{
     .container{
         max-width: 1170px;
     }
+
+    .hamburgher{
+        display: none;
+    }
   
 }
 
@@ -225,11 +362,4 @@ footer{
 
 /* Responsive ipad */
 
-@media (max-width: 768px) {
-    .card{
-        display: flex;
-        flex-wrap: wrap;
-        
-    
-    }
-}
+
