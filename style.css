@@ -13,6 +13,7 @@ html{
     --primary-color: #3684fd;
     --primary-light-color: #b5ddff;
     --background-color: #fff;
+    --secondary-color:rgb(151, 146,	228	);
     
 
 }
@@ -31,12 +32,17 @@ html{
     padding: 1rem;
 }
 
+p{
+    line-height: 1.5;
+}
+
 header{
     width: 100%;
     background-color: #3684fd;
     left: 0;
     top: 0;
     height: 70px;
+    z-index: 999;
 }
 
 header .container{
@@ -81,6 +87,10 @@ header .container{
     padding: 5px 40px;
 }
 
+.btn-secondary{
+    background-color: rgb(151, 146,	228	);
+}
+
 
 main{
     padding-top: 80px;
@@ -114,6 +124,10 @@ main{
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
 
 .rounded{
     border-radius: 1.5rem;
@@ -121,7 +135,7 @@ main{
 
 
 .m-1{
-    margin: 5px 0;
+    margin: 20px 0;
 }
 
 
@@ -151,6 +165,7 @@ main{
     display: block;
     margin: auto;
     padding: 0 2rem;
+    padding-top: 30px;
 }
 
 #intro .card i{
@@ -163,9 +178,8 @@ main{
 
 #intro .card h3{
         
-    margin: 1rem 0;
-    
-
+    padding: 1rem;
+    color: #3684fd;
 }
 
 #intro .card p{
@@ -173,6 +187,7 @@ main{
     color: gray;
     line-height: 2rem;
     font-weight: bold;
+    padding: 1rem;
     
 
 }
@@ -198,7 +213,7 @@ main{
 }
 
 .planning-img{
-    width: 70%;
+    width: 250px;
 }
 
 .column-white-img{
@@ -232,6 +247,16 @@ main{
     width: 35%;
 }
 
+#planning .column-white i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background-color: rgb(151, 146,	228	);
+
+} 
+
 
 #testimonial{
     padding-top: 3rem 0;
@@ -240,9 +265,59 @@ main{
 
 #testimonial .card{
     margin: 2rem 0;
+    background-color: rgb(151, 146,	228	);
+    padding: 1.5rem;
+
 
 }
 
+#testimonial .card img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+
+}
+
+#testimonial .card h3{
+    margin-top: 2rem;
+}
+
+#testimonial .card p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+#about{
+    padding: 2rem;
+    
+}
+
+#about h2{
+    font-size: 3rem; 
+    margin: 2rem 0;
+    color: rgb(151, 146,	228	);;
+
+}
+
+#about p{
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+}
+
+#about img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#about .image-quote {
+    position: relative;
+    display: inline-block;
+}
 
 
 #benefits{
@@ -255,6 +330,7 @@ main{
 #benefits .card{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: #fff;
 }
 
 .main-menu{
@@ -268,6 +344,7 @@ main{
 
 #about{
         margin: 2rem 0;
+        display: flex;
 
 }
 
@@ -284,12 +361,13 @@ main{
 
 .text-about{
     padding: 20px;
+    line-height: 1.75;
 }
 
 #free{
     margin: 2rem 0;
     background-color: rgb(151, 146,	228	);
-    height: 700px;
+    height: 500px;
 
 
 }
@@ -331,6 +409,12 @@ main{
 
     #testimonial .card{
         display: flex;
+        align-items: center;
+    }
+
+    .testimonial-author{
+        text-align: right;
+        margin-left: 2rem;
     }
 
 
@@ -354,10 +438,10 @@ main{
     .column-white.rounded {
         background-color: white;
         margin: 20px 0;
-        width: 100%;
+        width: 50%;
     }
     .planning-img{
-        width: 50%;
+       max-width: 100%;
     }
 
     
@@ -375,7 +459,10 @@ main{
 
     #intro .card:first-child > div{
         width: 50%;
+        padding: 20px;
     }
+
+   
 
     #planning .columns{
         display: flex;
@@ -392,7 +479,7 @@ main{
     #benefits .card{
         margin-left: 1rem;
         margin-right: 1rem;
-        width: calc((100% / 3 * 2) - 2rem);
+        width: calc((100% / 3) - 2rem);
 
     }
 
@@ -403,6 +490,12 @@ main{
     .main-menu{
         display: block;
     }
+
+    .planning-img{
+        max-width: 250px;
+     }
+
+
   
   
 }
