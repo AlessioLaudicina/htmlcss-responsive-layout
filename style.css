@@ -21,16 +21,6 @@ html{
 /* Utility */
 
 
-.debug-box{
-    background-color: red;
-    padding: 1rem;
-}
-
-
-.debug-box2{
-    background-color: green;
-    padding: 1rem;
-}
 
 p{
     line-height: 1.5;
@@ -71,12 +61,17 @@ header .container{
 
 .btn{
     border-radius: 50px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-decoration: none;
 }
 
 .btn-white{
     background-color: white;
+}
+
+.btn-big-white{
+    color: rgb(151, 146,	228	);
+    padding: 20px 60px;
 }
 
 .btn-blue{
@@ -90,6 +85,8 @@ header .container{
 
 .btn-secondary{
     background-color: rgb(151, 146,	228	);
+    margin-left: 10px;
+
 }
 
 
@@ -224,7 +221,7 @@ main{
 
 .title-planning{
     color: white;
-    margin: 60px 0;
+    margin: 50px 0;
 }
 
 .p-planning{
@@ -263,6 +260,25 @@ main{
     padding-top: 3rem 0;
 
 }
+
+#testimonial .card-text h3{
+    font-weight: lighter;
+    padding: 30px;
+    
+}
+
+#testimonial .card-text h2{
+    color: rgb(151, 146,	228	);
+    font-size: 40px;
+    padding-bottom: 20px;
+    
+}
+
+#testimonial .card-text p{
+    font-weight: lighter;
+    
+}
+
 
 #testimonial .card{
     margin: 2rem 0;
@@ -336,30 +352,32 @@ main{
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #fff;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 #benefits .card h1{
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(151, 146,	228	);
     padding: 1rem;
 }
 
 #benefits .card h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(151, 146,	228	);
-    padding: 1rem;
+    padding: 0 0 0 1rem;
 }
 #benefits .card p{
-    font-size: 1rem;
-    color: black;
+    font-size: 0.75rem;
+    color: gray;
     padding: 1rem;
+    line-height: 1.5;
 }
 
-#benefits .card a{
-   
-    margin: 2rem 1re,;
+.title-benefits{
+    padding-bottom: 20px;
 }
+
+
 
 
 
@@ -395,12 +413,49 @@ main{
 }
 
 #free{
-    margin: 2rem 0;
+    padding: 2rem 0;
     background-color: rgb(151, 146,	228	);
-    height: 500px;
+    display: flex;
+    
 
 
 }
+
+.discount{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.discount span{
+    font-weight: lighter;
+}
+
+.discount h3{
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.discount h2{
+    color: orange;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.discount p{
+    color: white;
+    margin: 50px 0;
+}
+
+footer{
+    background-color: black;
+}
+
+
+
 
 
 
